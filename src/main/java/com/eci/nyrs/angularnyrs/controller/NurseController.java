@@ -45,6 +45,6 @@ public class NurseController {
     @CrossOrigin
     @RequestMapping( value = "/personal/{service}", method = RequestMethod.GET )
     public List<Nurse> getNursingPersonalByService(@PathVariable("service") String service) {
-        return nurseService.getNursingPersonalByService(service);
+        return nurService.getNursingPersonalByService(service);
     }
 }
