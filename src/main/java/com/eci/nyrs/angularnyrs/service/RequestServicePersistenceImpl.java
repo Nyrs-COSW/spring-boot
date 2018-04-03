@@ -49,6 +49,7 @@ public class RequestServicePersistenceImpl implements RequestService {
         for (int i = 0; i < requesL.size() ; i++) {
             if(requesL.get(i).getCode() == code){
                 requesL.get(i).setAccepted(true);
+                reqrepo.save(requesL.get(i));
                 accept = Integer.toString(code);
             }
         }

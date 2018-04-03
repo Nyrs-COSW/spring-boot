@@ -1,0 +1,10 @@
+insert into patient values
+	('santiago.carrillo',28,1313,12121212133,'santiago.carrillo@mail.com','Santiago','Carrillo',1234,'patient'),
+	('petrosky',50,1313,12121212133,'dictador.izq@mail.com','Gustavo','Petro',1234,'patient'),
+	('leo',21,54198,16516,'maria.obando','leona','nasuas',1234,'patient'),
+	('javier.silva',24,1212,12121212,'javier.silva@mail.com','Javier Fernando','Silva Leon',12345,'patient'),
+	('isabel.castellanos',23,1122,121213,'isabel.castellanos@mail.com','Isabel','Castellanos',1234,'patient'),
+	('fabrizio.gozalez',28,1314,13121212133,'fabricio.gonzalez@mail.com','Fabricio','Gonzalez',1234,'patient'),
+	('cristiano.ronaldo',33,1414,14121212133,'cristiano.ronaldo@mail.com','Cristiano','Ronaldo',1234,'patient'),
+	('AlejandroVillarraga',21,1234,4523452,'av@mail.com','Alejandro','Villarraga',1234,'patient')
+;

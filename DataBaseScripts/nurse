@@ -1,0 +1,11 @@
+insert into nurse values
+	('pau',22,'paiu@mail.com','mamar','pau','almia',11234,'nurse',2),
+	('maria.obando',32,'maria.obando@mail.com','Especialista en terapias de recuperación, cuidados intensivos, cuidados maternos y aduto mayor','Maria Fernanda','Obando',1234,'nurse',5),
+	('LeonardoCastro',21,'lc@mail.com','Especialista en cuidados de trasplantes.','Leonardo','Castro',1234,'nurse',3),
+	('JoseEnfermero',30,'je@,ail.com','Especialista en cuidades paliativos','Jose','Enfermero',1234,'nurse',5),
+	('JairoGonzales',23,'jg@mail.com','Especialista en cuidados maternos','Jairo','Gonzales',1234,'nurse',10),
+	('david.galvis',35,'david.galvis@mail.com','Especialista en terapias de recuperación deportiva, lesiones de rodilla y terapia fisica','David Guillermo','Galvis',1234,'nurse',5),
+	('daniel.ayala',45,'daniel.ayala@mail.com','Enfermero especialsita en cuidados para pacientes con sobrepeso y obesidad','Daniel','Ayala',1234,'nurse',15),
+	('carmen.villalobos',29,'carmen.villalobos@mail.com','Especialista cuidados maternos y aduto mayor','Carmen','Villalobos',1234,'nurse',7),
+	('camila.gomez',31,'camila.gomez@mail.com','Enfermera especialista en pacintes masculinos, adultos mayores y cuidados intrahospitalarios','Camila','Gomez',1234,'nurse',4)
+;
