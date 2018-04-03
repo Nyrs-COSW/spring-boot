@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface NurseService {
     List<Nurse> getNurse();
-    Nurse createNurse( Nurse patient );
+    Nurse createNurse( Nurse nurse);
     Nurse getNurse(String username);
     List<Nurse> getNursingPersonalByService(String service);
 }

@@ -31,15 +31,17 @@ public class RequestController {
 
     @CrossOrigin
     @RequestMapping( value = "/requests/{code}", method = RequestMethod.GET )
-    public Request getRequest(@PathVariable("code") int code) {
-        return requestservice.getRequestByCode(code);
+    public Request getRequest(@PathVariable("code") String code) {
+        int Code = Integer.parseInt(code);
+        return requestservice.getRequestByCode(Code);
     }
 
     @CrossOrigin
     @RequestMapping(value = "/requests/accepet/{requestcode}", method = RequestMethod.POST)
-    public ResponseEntity<?> newPatient(@RequestBody int requestcode) {
-
-        return new ResponseEntity<>(requestservice.acceptRequest(requestcode), HttpStatus.ACCEPTED);
+    public ResponseEntity<?> newPatient(@RequestBody String requestcode) {
+        int requestcodes = Integer.parseInt(requestcode);
+        System.out.println(requestcode+" string");
+        return new ResponseEntity<>(requestservice.acceptRequest(requestcodes), HttpStatus.ACCEPTED);
 
     }
 

@@ -27,7 +27,7 @@ public class NurseController {
     @CrossOrigin
     @RequestMapping(value = "/nurse", method = RequestMethod.POST)
     public ResponseEntity<?> newNurse(@RequestBody Nurse nurse) {
-        return new ResponseEntity<>(nurseService.createNurse(nurse), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(nurService.createNurse(nurse), HttpStatus.ACCEPTED);
     }
 
     @CrossOrigin
