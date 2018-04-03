@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Service
+
 public class RequestUsersServiceImpl implements RequestUsersService {
 
 

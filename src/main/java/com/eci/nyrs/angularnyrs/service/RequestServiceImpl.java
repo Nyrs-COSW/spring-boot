@@ -57,6 +57,7 @@ public class RequestServiceImpl implements RequestService {
 
     @Override
     public List<Request> getRequest(String username, Boolean pending) {
+
         List<Request> nursesRequest = new ArrayList<>();
         for (int i = 0; i < requests.size() ; i++) {
             if(requests.get(i).getNurse().getUsername().equals(username) && requests.get(i).getAccepted().equals(pending) ){
@@ -68,7 +69,7 @@ public class RequestServiceImpl implements RequestService {
 
 
     @Override
-    public Request getRequestByCode(String code){
+    public Request getRequestByCode(int code){
         Request rqst = null;
         /*for (int i = 0; i < requests.size() ; i++) {
             if(requests.get(i).getCode().equals(code)){
@@ -79,13 +80,14 @@ public class RequestServiceImpl implements RequestService {
     }
 
     @Override
-    public String acceptRequest(String code) {
+    public String acceptRequest(int code) {
+
         /*for (int i = 0; i < requests.size() ; i++) {
             if(requests.get(i).getCode().equals(code)){
                 requests.get(i).setAccepted(true);
             }
         }*/
-        return code;
+        return null;
     }
 
     @Override

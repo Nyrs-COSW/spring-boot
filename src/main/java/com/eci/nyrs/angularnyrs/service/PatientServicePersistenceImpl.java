@@ -22,7 +22,8 @@ public class PatientServicePersistenceImpl implements PatientService{
 
     @Override
     public Patient createPatient(Patient patient) {
-        return null;
+        patirepo.save(patient);
+        return patirepo.findOne(patient.getUsername());
     }
 
     @Override

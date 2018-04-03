@@ -31,13 +31,13 @@ public class RequestController {
 
     @CrossOrigin
     @RequestMapping( value = "/requests/{code}", method = RequestMethod.GET )
-    public Request getRequest(@PathVariable("code") String code) {
+    public Request getRequest(@PathVariable("code") int code) {
         return requestservice.getRequestByCode(code);
     }
 
     @CrossOrigin
     @RequestMapping(value = "/requests/accepet/{requestcode}", method = RequestMethod.POST)
-    public ResponseEntity<?> newPatient(@RequestBody String requestcode) {
+    public ResponseEntity<?> newPatient(@RequestBody int requestcode) {
 
         return new ResponseEntity<>(requestservice.acceptRequest(requestcode), HttpStatus.ACCEPTED);
 

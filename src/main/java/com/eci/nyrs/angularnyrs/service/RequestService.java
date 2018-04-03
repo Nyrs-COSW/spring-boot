@@ -8,9 +8,9 @@ public interface RequestService {
 
     List<Request> getRequest(String username, Boolean pending);
 
-    Request getRequestByCode(String code);
+    Request getRequestByCode(int code);
 
-    String acceptRequest(String code);
+    String acceptRequest(int code);
 
     List<Request> getAllRequest();
 }
