@@ -9,5 +9,6 @@ public interface PatientService
     List<Patient> getPatients();
     Patient createPatient( Patient patient );
     Patient getPatient(String username);
+    Patient editPatient(Patient patient);
 
 }

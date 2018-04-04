@@ -55,6 +55,11 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
+    public Patient editPatient(Patient patient) {
+        return patient;
+    }
+
+    @Override
     public List<Patient> getPatients()
     {
         return patients;

@@ -38,6 +38,14 @@ public class PatientController {
     }
 
     @CrossOrigin
+    @RequestMapping(value = "/patient/edit", method = RequestMethod.POST)
+    public ResponseEntity<?> updatePatient(@RequestBody Patient patient) {
+
+        return new ResponseEntity<>(patients.editPatient(patient), HttpStatus.ACCEPTED);
+
+    }
+
+    @CrossOrigin
     @RequestMapping(value = "/patient/{username}", method = RequestMethod.GET)
     public ResponseEntity<?> getPatient(@PathVariable("username") String username) {
 

@@ -30,4 +30,10 @@ public class PatientServicePersistenceImpl implements PatientService{
     public Patient getPatient(String username) {
         return patirepo.findOne(username);
     }
+
+    @Override
+    public Patient editPatient(Patient patient) {
+        patirepo.save(patient);
+        return patirepo.findOne(patient.getUsername());
+    }
 }
