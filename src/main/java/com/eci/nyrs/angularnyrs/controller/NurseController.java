@@ -29,7 +29,11 @@ public class NurseController {
     public ResponseEntity<?> newNurse(@RequestBody Nurse nurse) {
         return new ResponseEntity<>(nurService.createNurse(nurse), HttpStatus.ACCEPTED);
     }
-
+    @CrossOrigin
+    @RequestMapping(value = "/nurse/edit", method = RequestMethod.POST)
+    public ResponseEntity<?> editNurse(@RequestBody Nurse nurse) {
+        return new ResponseEntity<>(nurService.editNurse(nurse), HttpStatus.ACCEPTED);
+    }
     @CrossOrigin
     @RequestMapping(value = "/allNurse", method = RequestMethod.GET)
     public ResponseEntity<?> getAllNurse() {

@@ -28,6 +28,12 @@ public class NurseServicePersistenceImpl implements NurseService {
     }
 
     @Override
+    public Nurse editNurse(Nurse nurse) {
+        nurrepo.save(nurse);
+        return nurrepo.findOne(nurse.getUsername());
+    }
+
+    @Override
     public Nurse getNurse(String username) {
         return nurrepo.findOne(username);
     }
