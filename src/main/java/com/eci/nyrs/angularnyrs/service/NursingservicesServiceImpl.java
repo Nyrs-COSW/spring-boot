@@ -1,10 +1,9 @@
 package com.eci.nyrs.angularnyrs.service;
 
 import com.eci.nyrs.angularnyrs.models.Nursingservices;
-import com.eci.nyrs.angularnyrs.models.Nurse;
-import com.eci.nyrs.angularnyrs.models.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;

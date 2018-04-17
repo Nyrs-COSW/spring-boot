@@ -13,14 +13,14 @@ import static javax.persistence.CascadeType.ALL;
 public class Request {
 
     private Date date;
-    private Nurse nurse;
-    private Patient patient;
+    private User nurse;
+    private User patient;
     private Nursingservices nursingservices;
     private Boolean accepted;
     private String description;
     private int code;
 
-    public Request(Date date, Nurse nurse, Patient patient, Nursingservices nursingservices, Boolean accepted, int code, String description) {
+    public Request(Date date, User nurse, User patient, Nursingservices nursingservices, Boolean accepted, int code, String description) {
         this.date = date;
         this.nurse = nurse;
         this.patient = patient;
@@ -64,21 +64,21 @@ public class Request {
 
     @ManyToOne(cascade=ALL)
     @JoinColumn(name="nurse_username", referencedColumnName="username", nullable=true)
-    public Nurse getNurse() {
+    public User getNurse() {
         return nurse;
     }
 
-    public void setNurse(Nurse nurse) {
+    public void setNurse(User nurse) {
         this.nurse = nurse;
     }
 
     @ManyToOne(cascade=ALL)
     @JoinColumn(name="patient_username", referencedColumnName="username", nullable=true)
-    public Patient getPatient() {
+    public User getPatient() {
         return patient;
     }
 
-    public void setPatient(Patient patient) {
+    public void setPatient(User patient) {
         this.patient = patient;
     }
 

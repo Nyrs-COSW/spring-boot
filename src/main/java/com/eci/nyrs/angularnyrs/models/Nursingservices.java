@@ -13,7 +13,7 @@ public class Nursingservices {
     private String name;
     private String description;
     private String image;
-    private List<Nurse> nurseList;
+    private List<User> userList;
 
 
 
@@ -58,11 +58,12 @@ public class Nursingservices {
 
     @ManyToMany(mappedBy="services",fetch= FetchType.EAGER, cascade = CascadeType.ALL)
     @JsonIgnore
-    public List<Nurse> getNurseList() {
-        return nurseList;
+    public List<User> getUserList() {
+        return userList;
     }
 
-    public void setNurseList(List<Nurse> nurseList) {
-        this.nurseList = nurseList;
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
     }
+
 }

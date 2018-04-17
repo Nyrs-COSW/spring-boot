@@ -7,11 +7,10 @@
     <property name="hibernate.connection.url">jdbc:mysql://cosw-database-aws.cjjmumrfzu9m.us-west-2.rds.amazonaws.com:3306/dbNyrs?</property>
     <property name="hibernate.connection.username">nyrs</property>
     <property name="hibernate.connection.password">nyrscosw</property>
-    <mapping class="com.eci.nyrs.angularnyrs.models.Nurse"/>
       <mapping class="com.eci.nyrs.angularnyrs.models.Nursingservices"/>
-      <mapping class="com.eci.nyrs.angularnyrs.models.Patient"/>
       <mapping class="com.eci.nyrs.angularnyrs.models.Request"/>
       <mapping class="com.eci.nyrs.angularnyrs.models.RequestUsers"/>
       <mapping class="com.eci.nyrs.angularnyrs.models.User"/>
+      <mapping class="com.eci.nyrs.angularnyrs.models.Experience"/>
   </session-factory>
 </hibernate-configuration>

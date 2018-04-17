@@ -1,27 +1,33 @@
 package com.eci.nyrs.angularnyrs.service;
 
-import com.eci.nyrs.angularnyrs.models.Nurse;
-import com.eci.nyrs.angularnyrs.models.Patient;
 import com.eci.nyrs.angularnyrs.models.User;
 
-import javax.servlet.ServletException;
-import java.sql.SQLException;
 import java.util.List;
 
 public interface UserService
 {
-    List<User> getUsers();
+    List<User> getPatients();
 
     User getUser( String username );
 
-    Patient createPatient( Patient user );
+    User createPatient( User user );
 
-    Nurse createNurse (Nurse user);
+    User createNurse (User user);
 
     User findUserByEmail( String email );
 
     User findUserByEmailAndPassword( String email, String password );
 
-    List<Nurse> getNursingPersonalByService(String service);
+    List<User> getNursingPersonalByService(String service);
+
+    User editNurse(User nurse);
+
+    List<User> getAllNurse ();
+
+    User editPatient(User patient);
+
+
+
+
 
 }
