@@ -46,4 +46,4 @@ deployment:
     branch: master
 
     heroku:
-appname: nyrs
+      appname: nyrs
