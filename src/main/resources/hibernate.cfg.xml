@@ -4,7 +4,7 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://cosw-database-aws.cjjmumrfzu9m.us-west-2.rds.amazonaws.com:3306/dbNyrs?</property>
+    <property name="hibernate.connection.url">jdbc:mysql://cosw-database-aws.cjjmumrfzu9m.us-west-2.rds.amazonaws.com:3306/dbRefactorizada?</property>
     <property name="hibernate.connection.username">nyrs</property>
     <property name="hibernate.connection.password">nyrscosw</property>
       <mapping class="com.eci.nyrs.angularnyrs.models.Nursingservices"/>
